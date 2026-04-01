@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding Invitation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Opening -->
+<div id="opening">
+<div class="classic-frame">
+
+<p class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</p>
+<p>Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
+
+<h2>The Wedding Of</h2>
+<h1>Jun & Nia</h1>
+
+<p>Kepada Yth:</p>
+<h3 id="guestName">Tamu Undangan</h3>
+
+<button onclick="openInvitation()">Buka Undangan</button>
+
+</div>
+</div>
+
+<!-- Musik -->
+<audio id="music" loop>
+<source src="Nadhif Basalamah - bergema sampai selamanya (Stripped Version - Official Audio) [RrP9YRInhGs].mp3" type="audio/mp3">
+</audio>
+
+<button id="musicBtn" onclick="toggleMusic()">♫</button>
+
+<!-- Auto Scroll Button -->
+<button id="autoBtn" onclick="toggleAuto()">Auto</button>
+
+<!-- Navbar -->
+<nav>
+<h2>Jun & Nia</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#couple">Mempelai</a></li>
+<li><a href="#event">Acara</a></li>
+<li><a href="#gallery">Galeri</a></li>
+<li><a href="#rsvp">RSVP</a></li>
+</ul>
+</nav>
+
+<section id="home">
+<div class="classic-frame">
+<h1>Jun & Nia</h1>
+<p>05 April 2026</p>
+<div id="countdown"></div>
+</div>
+</section>
+
+<section id="couple">
+<div class="classic-frame">
+
+<h2>Mempelai</h2>
+
+<div class="couple-box">
+
+<div class="card">
+<img src="MEYDINA_30.jpg.jpeg">
+<h3>Masjudin</h3>
+<p>Putra dari</p>
+<p>Mastur & Sahurun</p>
+</div>
+
+<div class="card">
+<img src="MEYDINA_35.jpg.jpeg">
+<h3>Husnia Fitriana</h3>
+<p>Putri dari</p>
+<p>Saipul Bahri & Zohratul Iman</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="event">
+<div class="classic-frame">
+
+<h2>Akad Nikah</h2>
+<p>Ahad, 05 April 2026</p>
+<p>14:00</p>
+
+<a class="map-btn"
+href="https://maps.app.goo.gl/1re31hNV33KtTLxm7">
+Buka Lokasi
+</a>
+
+</div>
+</section>
+
+<section id="gallery">
+<div class="classic-frame">
+
+<h2>Galeri</h2>
+
+<div class="gallery">
+<img src="MEYDINA_11.jpg.jpeg">
+<img src="MEYDINA_14.jpg.jpeg">
+<img src="MEYDINA_18.jpg.jpeg">
+<img src="MEYDINA_20.jpg.jpeg">
+<img src="MEYDINA_21.jpg.jpeg">
+<img src="MEYDINA_22.jpg.jpeg">
+<img src="MEYDINA_24.jpg.jpeg">
+<img src="MEYDINA_37.jpg.jpeg">
+<img src="MEYDINA_47.jpg.jpeg">
+<img src="MEYDINA_49.jpg.jpeg">
+<img src="MEYDINA_51.jpg.jpeg">
+<img src="MEYDINA_53.jpg.jpeg">
+</div>
+
+</div>
+</section>
+
+<section id="rsvp">
+<div class="classic-frame">
+
+<h2>RSVP</h2>
+
+<input type="text" id="nama" placeholder="Nama">
+<input type="number" id="jumlah" placeholder="Jumlah Tamu">
+
+<select id="status">
+<option>Hadir</option>
+<option>Tidak Hadir</option>
+</select>
+
+<textarea id="pesan" placeholder="Ucapan"></textarea>
+
+<button onclick="kirimRSVP()">Kirim</button>
+
+</div>
+</section>
+
+<footer>
+Wedding Jun & Nia
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
