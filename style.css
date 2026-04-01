@@ -1,0 +1,173 @@
+body{
+margin:0;
+font-family:Poppins;
+background:#0f2f24;
+color:white;
+scroll-behavior:smooth;
+}
+
+/* CLASSIC FRAME */
+.classic-frame{
+padding:40px;
+margin:auto;
+max-width:900px;
+border:6px double #c7b27a;
+border-radius:25px;
+background:rgba(0,0,0,0.5);
+box-shadow:0 0 40px rgba(0,0,0,0.5);
+position:relative;
+}
+
+/* Ornamen klasik */
+.classic-frame::before,
+.classic-frame::after{
+content:"";
+position:absolute;
+width:40px;
+height:40px;
+border:3px solid #c7b27a;
+}
+
+.classic-frame::before{
+top:-10px;
+left:-10px;
+border-right:none;
+border-bottom:none;
+}
+
+.classic-frame::after{
+bottom:-10px;
+right:-10px;
+border-left:none;
+border-top:none;
+}
+
+/* Opening */
+#opening{
+position:fixed;
+width:100%;
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("cover.jpg");
+background-size:cover;
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:999;
+text-align:center;
+}
+
+/* Navbar */
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 40px;
+background:#153f32;
+position:sticky;
+top:0;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+/* Section background */
+section{
+padding:120px 20px;
+text-align:center;
+background-size:cover;
+background-attachment:fixed;
+}
+
+#home{
+background:url(bg-home.jpg);
+}
+
+#couple{
+background:url(bg-couple.jpg);
+}
+
+#event{
+background:url(bg-event.jpg);
+}
+
+#gallery{
+background:url(bg-gallery.jpg);
+}
+
+#rsvp{
+background:url(bg-rsvp.jpg);
+}
+
+/* Couple */
+.couple-box{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.card img{
+width:200px;
+border-radius:20px;
+}
+
+/* Gallery */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:15px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* Button */
+button{
+background:#1c6b52;
+border:none;
+padding:12px 25px;
+border-radius:25px;
+color:white;
+cursor:pointer;
+}
+
+/* Floating buttons */
+#musicBtn{
+position:fixed;
+bottom:20px;
+right:20px;
+}
+
+#autoBtn{
+position:fixed;
+bottom:70px;
+right:20px;
+}
+
+/* Form */
+input,select,textarea{
+display:block;
+margin:10px auto;
+padding:10px;
+border-radius:10px;
+border:none;
+width:250px;
+}
